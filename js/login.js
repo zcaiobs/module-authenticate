@@ -11,7 +11,7 @@ const login = async user => {
     }
     return await fetch(URL_API, options)
         .then(res => res.json())
-        .catch(err => console.log('Error', err));  // ok
+        .catch(err => console.log('Error', err));  
 }
 
 

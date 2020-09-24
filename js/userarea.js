@@ -5,7 +5,6 @@ const buscar = async (token) => {
         method: 'GET',
         headers: new Headers({
             'Authorization': 'Bearer ' + token
-            
         })
     }
     return await fetch(URL_API, options)
