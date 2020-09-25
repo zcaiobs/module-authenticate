@@ -31,7 +31,7 @@ btnLogin.addEventListener('click', () => {
             
             window.location.href = auth.router;
         }
-        else document.getElementById('imprime').innerHTML = 'Acesso inválido';
+        else document.getElementById('imprime').innerHTML = 'Invalid access';
     });
 });
 
