@@ -6,18 +6,29 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/resetpwd.css">
 </head>
 
 <body>
-<h1>Reset your password here! Please, enter your new password.</h1>
-<label for="pwd">New password</label>
-<input type="password" id="pwd">
-<label for="repwd">Confirm password</label>
-<input type="password" id="repwd">
-<button id="btnSave">Save</button>
-<h3 id="msg"></h3>
-
+    <div class="container-1">
+        <header></header>
+        <main>
+            
+            <div class="container-2">
+                <div>
+                    <label for="pwd">New password</label>
+                    <input type="password" id="pwd" placeholder="********">
+                </div>
+                <div>
+                    <label for="repwd">Confirm password</label>
+                    <input type="password" id="repwd" placeholder="********">
+                </div>
+                <button id="btnSave">Save</button>
+                <h4 id="msg"></h4>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
     <script src="js/resetpwd.js" async defer></script>
 </body>
 

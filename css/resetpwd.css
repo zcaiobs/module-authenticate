@@ -2,8 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: white;
     font-family: 'Roboto', sans-serif;
+    background: white;
     background-image: url(/images/17918.jpg);
     background-repeat: no-repeat;
 }
@@ -20,44 +20,15 @@ footer {
     grid-area: f;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    margin: 20px 0px 5px 0px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: white;
-    background-color: mediumpurple;
-    outline: none;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: rgb(129, 99, 190);
-}
-
-button:active {
-    background-color: rgb(255, 255, 255);
-    color: mediumpurple;
-    font-weight: bold;
-}
-
-button:focus {
-    border-color: rgb(0, 112, 216);
-}
-
-
 .container-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 20vh 60vh 20vh;
-    grid-template-areas: 'h h h h'
-                         'm m m m'
-                         'f f f f';
+    grid-template-areas: 'h' 'm' 'f';
 }
 
 .container-2 {
-    padding: 70px 20px;
+    padding: 50px 20px;
     border: 1px solid rgb(0, 185, 40);
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -95,17 +66,38 @@ label {
     color: rgb(104, 104, 104);
 }
 
-a {
-    font-size: 12px;
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0px 5px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background-color: mediumpurple;
+    outline: none;
     font-weight: bold;
 }
 
-.forgot {
-    margin-left: 160px;
+button:hover {
+    background-color: rgb(129, 99, 190);
 }
 
-h4 {
+button:active {
+    background-color: rgb(255, 255, 255);
+    color: mediumpurple;
+    font-weight: bold;
+}
+
+button:focus {
+    border-color: rgb(0, 112, 216);
+}
+
+.error {
     color: rgb(235, 45, 45);
+}
+
+.success {
+    color: rgb(61, 175, 76);
 }
 
 @media only screen and (max-width: 600px) {

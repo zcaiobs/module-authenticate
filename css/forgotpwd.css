@@ -57,12 +57,12 @@ button:focus {
 }
 
 .container-2 {
-    padding: 70px 20px;
+    padding: 50px 20px;
     border: 1px solid rgb(0, 185, 40);
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
     background: rgb(255, 255, 255);
-    height: 253px;
+    height: 180px;
     max-width: 300px;
     margin: auto;
 }
@@ -95,17 +95,16 @@ label {
     color: rgb(104, 104, 104);
 }
 
-a {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.forgot {
-    margin-left: 160px;
-}
-
 h4 {
     color: rgb(235, 45, 45);
+}
+
+.error {
+    color: rgb(235, 45, 45);
+}
+
+.success {
+    color: rgb(61, 175, 76);
 }
 
 @media only screen and (max-width: 600px) {

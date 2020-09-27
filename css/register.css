@@ -1,7 +1,7 @@
 html, body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background: white;
     font-family: 'Roboto', sans-serif;
     background-image: url(/images/17918.jpg);
@@ -18,6 +18,39 @@ main {
 
 footer {
     grid-area: f;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 55vh 30vh;
+    grid-template-areas: 'h h'
+                         'm m'
+                         'f f';
+}
+
+.container-2 {
+    margin: auto;
+    height: 370px;
+    max-width: 300px;
+    padding: 70px 20px;
+    background: white;
+    border: 1px solid green;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.container-2 div input {
+    width: 82%;
+    height: 40px;
+    padding: 0px;
+    border: 1px;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    border: 1px solid rgb(198, 191, 202);
+    padding: 0px 25px 0px 25px;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
 }
 
 button {
@@ -46,47 +79,9 @@ button:focus {
     border-color: rgb(0, 112, 216);
 }
 
-
-.container-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20vh 60vh 20vh;
-    grid-template-areas: 'h h h h'
-                         'm m m m'
-                         'f f f f';
-}
-
-.container-2 {
-    padding: 70px 20px;
-    border: 1px solid rgb(0, 185, 40);
-    border-top-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    background: rgb(255, 255, 255);
-    height: 253px;
-    max-width: 300px;
-    margin: auto;
-}
-
-.container-2 div input {
-    width: 82%;
-    height: 40px;
-    padding: 0px;
-    border: 1px;
-    border-radius: 5px;
-    margin: 5px 0px 5px 0px;
-    border: 1px solid rgb(198, 191, 202);
-    padding: 0px 25px 0px 25px;
-    font-size: 15px;
-    color: rgb(104, 104, 104);
-}
-
 .container-2 div input:focus {
     border-color: rgb(0, 112, 216);
     outline: none;
-}
-
-::placeholder {
-    color: rgb(194, 194, 194);
 }
 
 label {
@@ -95,17 +90,16 @@ label {
     color: rgb(104, 104, 104);
 }
 
-a {
-    font-size: 12px;
-    font-weight: bold;
+::placeholder {
+    color: rgb(194, 194, 194);
 }
 
-.forgot {
-    margin-left: 160px;
-}
-
-h4 {
+.error {
     color: rgb(235, 45, 45);
+}
+
+.success {
+    color: rgb(61, 175, 76);
 }
 
 @media only screen and (max-width: 600px) {
